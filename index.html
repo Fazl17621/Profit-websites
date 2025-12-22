@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEW BRAND WEBSITE FOR PROFIT</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:linear-gradient(135deg,#0b1220,#1a1f3a);
+  color:#fff;
+}
+h1{
+  text-align:center;
+  margin:20px 10px;
+  text-shadow:2px 2px 6px #00ffcc;
+}
+.subtitle{
+  text-align:center;
+  font-size:18px;
+  opacity:.9;
+}
+
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:18px;
+  padding:20px;
+}
+.card{
+  background:#162048;
+  border-radius:14px;
+  width:280px;
+  padding:20px;
+  box-shadow:0 10px 20px rgba(0,0,0,.5);
+}
+.card h3{color:#ffd32a;margin-bottom:10px}
+.card p{margin:6px 0}
+.btn{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:#ff7f50;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+/* Payment box */
+.payment{
+  max-width:900px;
+  margin:20px auto;
+  background:#0f1836;
+  border-radius:14px;
+  padding:20px;
+  text-align:center;
+}
+.payment h2{color:#ffd32a}
+
+/* Modal */
+.modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.85);
+  z-index:9999;
+}
+.modal-box{
+  background:#1f2a55;
+  max-width:420px;
+  margin:12% auto;
+  padding:22px;
+  border-radius:14px;
+  text-align:center;
+}
+.close{
+  float:right;
+  cursor:pointer;
+  font-size:22px;
+  color:#ff7675;
+}
+
+/* WhatsApp Button */
+.wa-btn{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  background:#25D366;
+  color:#fff;
+  padding:14px 18px;
+  border-radius:50px;
+  font-weight:bold;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  cursor:pointer;
+  z-index:10000;
+  box-shadow:0 8px 20px rgba(0,0,0,.4);
+}
+.wa-btn img{width:26px}
+
+/* About */
+.about{
+  max-width:900px;
+  margin:30px auto;
+  background:#0f1836;
+  border-radius:14px;
+  padding:20px;
+  text-align:center;
+}
+.about h2{color:#ffd32a}
+</style>
+</head>
+
+<body>
+
+<h1>NEW BRAND WEBSITE FOR PROFIT</h1>
+<p class="subtitle">Secure Investment • Fast Profit • Trusted Platform</p>
+
+<div class="cards">
+  <div class="card"><h3>Plan 1</h3><p>Investment: 5,000 PKR</p><p>Profit: 15,000 PKR</p><p>Time: 30 Minutes</p><button class="btn" onclick="openModal('Plan 1')">Join Now</button></div>
+  <div class="card"><h3>Plan 2</h3><p>Investment: 6,000 PKR</p><p>Profit: 18,000 PKR</p><p>Time: 30 Minutes</p><button class="btn" onclick="openModal('Plan 2')">Join Now</button></div>
+  <div class="card"><h3>Plan 3</h3><p>Investment: 7,000 PKR</p><p>Profit: 22,000 PKR</p><p>Time: 30 Minutes</p><button class="btn" onclick="openModal('Plan 3')">Join Now</button></div>
+  <div class="card"><h3>Plan 4</h3><p>Investment: 8,000 PKR</p><p>Profit: 25,000 PKR</p><p>Time: 30 Minutes</p><button class="btn" onclick="openModal('Plan 4')">Join Now</button></div>
+  <div class="card"><h3>Plan 5</h3><p>Investment: 9,000 PKR</p><p>Profit: 28,000 PKR</p><p>Time: 30 Minutes</p><button class="btn" onclick="openModal('Plan 5')">Join Now</button></div>
+  <div class="card"><h3>Plan 6</h3><p>Investment: 10,000 PKR</p><p>Profit: 35,000 PKR</p><p>Time: 30 Minutes</p><button class="btn" onclick="openModal('Plan 6')">Join Now</button></div>
+  <div class="card"><h3>Plan 7</h3><p>Investment: 15,000 PKR</p><p>Profit: 55,000 PKR</p><p>Time: 30 Minutes</p><button class="btn" onclick="openModal('Plan 7')">Join Now</button></div>
+  <div class="card"><h3>Plan 8</h3><p>Investment: 18,000 PKR</p><p>Profit: 75,000 PKR</p><p>Time: 30 Minutes</p><button class="btn" onclick="openModal('Plan 8')">Join Now</button></div>
+  <div class="card"><h3>Plan 9</h3><p>Investment: 20,000 PKR</p><p>Profit: 100,000 PKR</p><p>Time: 30 Minutes</p><button class="btn" onclick="openModal('Plan 9')">Join Now</button></div>
+  <div class="card"><h3>Plan 10</h3><p>Investment: 25,000 PKR</p><p>Profit: 150,000 PKR</p><p>Time: 30 Minutes</p><button class="btn" onclick="openModal('Plan 10')">Join Now</button></div>
+  <div class="card"><h3>Plan 11</h3><p>Investment: 30,000 PKR</p><p>Profit: 180,000 PKR</p><p>Time: 30 Minutes</p><button class="btn" onclick="openModal('Plan 11')">Join Now</button></div>
+</div>
+
+<div class="payment">
+  <h2>Payment Details</h2>
+  <p><b>Account:</b> 03001868780</p>
+  <p><b>Name:</b> Fazl Ur Rahman</p>
+  <p><b>Account Type:</b> SadaPay Account</p>
+</div>
+
+<div id="modal" class="modal">
+  <div class="modal-box">
+    <span class="close" onclick="closeModal()">✖</span>
+    <h2 id="planTitle"></h2>
+    <p><b>Account:</b> 03001868780</p>
+    <p><b>Name:</b> Fazl Ur Rahman</p>
+    <p><b>Account Type:</b> SadaPay Account</p>
+    <p>After payment, contact on WhatsApp</p>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About Us</h2>
+  <p>100% trusted platform with secure payments and fast profit delivery.</p>
+  <p><b>Call:</b> 03001868780 | <b>WhatsApp:</b> 03479042729</p>
+</div>
+
+<div class="wa-btn" onclick="openWhatsApp()">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+  WhatsApp Chat
+</div>
+
+<script>
+function openModal(name){
+  document.getElementById('planTitle').innerText = name;
+  document.getElementById('modal').style.display = 'block';
+}
+function closeModal(){
+  document.getElementById('modal').style.display = 'none';
+}
+function openWhatsApp(){
+  window.location.href = 'https://wa.me/923479042729';
+}
+</script>
+
+</body>
+</html>
